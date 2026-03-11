@@ -1,0 +1,19 @@
+BFS(grafo, inicio)
+
+    crear conjunto visitados
+    crear cola
+
+    agregar inicio a cola
+    marcar inicio como visitado
+
+    mientras la cola no esté vacía
+
+        nodo_actual ← sacar primero de la cola
+        imprimir nodo_actual
+
+        para cada vecino de nodo_actual en grafo
+
+            si vecino no está en visitados
+
+                marcar vecino como visitado
+                agregar vecino a la cola
